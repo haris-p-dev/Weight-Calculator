@@ -7,26 +7,29 @@ public class Main {
 
         String init ;
 
-        System.out.printf("Welcome to the weight converter\n");
-        System.out.printf("Press 'K' if you want to convert kilos to lb or 'L' for vice versa: ");
-        init = reader.next();
+        System.out.printf("Welcome to the weight converter. \n");
+        System.out.printf("Press 'K' to convert kilos to lbs. \n");
+        System.out.printf("Or press 'L' to convert lbs to kilos. \n");
 
+        init = reader.next();
         char firstLetter= init.toUpperCase().charAt(0);
 
         if (firstLetter == 'K') {
             double kilos ;
-            System.out.printf("Enter the ammount of KILOS you want to convert: " );
+            System.out.printf("Enter the amount of kilos you would like to convert: ");
             kilos = reader.nextDouble();
             double lbs = kilos * 2.20462 ;
-
+            System.out.printf(" %.2f kilos is %.2f lbs.",kilos, lbs );
         }
 
         else if(firstLetter == 'L'){
-            //0.453592
-            System.out.println("");
+            double lbs ;
+            System.out.printf("Enter the amount of lbs you would like to convert: ");
+            lbs = reader.nextDouble();
+            double kilos = lbs * 0.453592 ;
+            System.out.printf(" %.2f lbs is %.2f kilos.",lbs, kilos );
+
         }
-
-
     }
 
 }
