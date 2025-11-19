@@ -1,0 +1,1 @@
+"A simple Weight Calculator made by me to get familiar with Java language. The Weight Calculator is a different version of Bro Code's "weight converter program" tutorial. Soon a different version will be added with the same functionality but difffent implementation"
